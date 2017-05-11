@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Title and favicon -->
+    <title>Practical Todos</title>
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <h1 class="display-1">Todo List</h1>
+      </div>
+      
+      <div class="form-group row">
+        <div class="col-2 offset-10">
+          <button class="btn btn-secondary" onclick="handlers.toggleAll()"> Toggle All </button>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-10">
+          <input class="form-control" id="addTodoTextInput" placeholder="What needs to be done?" type="text">
+        </div>
+        <div class="col-2">
+          <button class="btn btn-outline-primary" onclick="handlers.addTodo()"> Add </button>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-5">
+          <input class="form-control" id="changeTodoPositionInput" placeholder="Todo position" type="number">
+        </div>
+        <div class="col-5">
+          <input class="form-control" id="changeTodoTextInput" placeholder="New value" type="text">
+        </div>
+        <div class="col-2">
+          <button class="btn btn-outline-primary" onclick="handlers.changeTodo()"> Change </button>
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-10">
+          <input class="form-control" id="toggleCompletedPositionInput" placeholder="Todo position" type="number">
+        </div>
+        <div class="col-2">
+          <button class="btn btn-outline-primary" onclick="handlers.toggleCompleted()"> Toggle </button>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="list-unstyled">
+        </ul>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <!-- App-related JS -->
+    <script src="/client.js"></script>
+  </body>
+</html>
